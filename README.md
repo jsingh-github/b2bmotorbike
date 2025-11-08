@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fox Racing B2B Wholesale Catalog
 
-## Getting Started
+A modern B2B catalog web application built with Next.js 16, TypeScript, and Tailwind CSS, inspired by Fox Racing's bold design aesthetic.
 
-First, run the development server:
+## 🚀 Features
+
+- **Responsive Design**: Mobile-first approach that works seamlessly across all devices
+- **Modern Tech Stack**: Built with Next.js 16, TypeScript, and Tailwind CSS
+- **Component-Based Architecture**: Reusable and maintainable React components
+- **B2B Focus**: Wholesale catalog with product management capabilities
+- **Interactive UI**: Smooth animations and hover effects
+- **SEO Optimized**: Proper meta tags and semantic HTML
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Font**: Inter (Google Fonts)
+
+## 🚦 Getting Started
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+foxracing/
+├── app/
+│   ├── layout.tsx          # Root layout with Header and Footer
+│   ├── page.tsx            # Home page
+│   └── globals.css         # Global styles
+├── components/
+│   ├── Header.tsx          # Navigation header
+│   ├── Hero.tsx            # Hero section
+│   ├── ExploreSection.tsx  # Category exploration
+│   ├── CategoryBanner.tsx  # Promotional banners
+│   ├── WholesaleCatalog.tsx # Product catalog grid
+│   ├── PodiumClub.tsx      # Email signup
+│   └── Footer.tsx          # Site footer
+└── public/
+    └── images/             # Static images
+```
 
-## Learn More
+## 🎨 Design Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Color Scheme**: Black, white, and signature Fox Racing red (#DC2626)
+- **Typography**: Clean, bold headlines with Inter font family
+- **Layout**: Modern grid-based design with full-width sections
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔄 Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Adding Products
+Edit the `products` array in `components/WholesaleCatalog.tsx`
 
-## Deploy on Vercel
+### Changing Colors
+Update Tailwind classes or modify the color scheme
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Adding Categories
+Update the `categories` array in `components/ExploreSection.tsx`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📱 Responsive Breakpoints
+
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
+
+## 🚀 Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new).
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
