@@ -17,7 +17,7 @@ export default function Hero() {
           BOLD BY DESIGN
         </h1>
         <p className="text-lg md:text-xl mb-8 max-w-2xl">
-          SPRING SUMMER COLLECTION 2025
+          Winter collection 2026
         </p>
         <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded transition-colors duration-300">
           SHOP NOW
